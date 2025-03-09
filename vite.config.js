@@ -3,8 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base:"/Portfolio/",
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
+  base: './',  // 👈 Ensures assets load correctly
 });
