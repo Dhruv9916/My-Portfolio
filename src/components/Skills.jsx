@@ -1,29 +1,19 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  {
-    name: "JavaScript",
-    image: "./images/javascript.png",
-    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  { name: "React", image: "./images/react.png", link: "https://reactjs.org/" },
-  { name: "Redux", image: "./images/redux.png", link: "https://redux.js.org" },
-  {
-    name: "HTML5",
-    image: "./images/html5.png",
-    link: "https://www.w3.org/html/",
-  },
-  {
-    name: "CSS3",
-    image: "./images/css3.png",
-    link: "https://www.w3schools.com/css/",
-  },
-  { name: "Git", image: "./images/git.png", link: "https://git-scm.com/" },
-  {
-    name: "Bootstrap",
-    image: "./images/bootstrap.png",
-    link: "https://getbootstrap.com/",
-  },
+  { name: "JavaScript", image: "./images/javascript.png" },
+  { name: "React", image: "./images/react.png" },
+  { name: "Redux", image: "./images/redux.png" },
+  { name: "HTML5", image: "./images/html5.png" },
+  { name: "CSS3", image: "./images/css3.png" },
+  { name: "Git", image: "./images/git.png" },
+  { name: "Bootstrap", image: "./images/bootstrap.png" },
+  { name: "Java", image: "./images/java.png" },
+  { name: "Tailwind CSS", image: "./images/tailwind-css.svg" },
+  { name: "Material UI", image: "./images/icons8-material-ui-48.png" },
+  { name: "Shadcn UI", image: "./images/shadcn-ui-seeklogo.png" },
+  { name: "SQL", image: "./images/sql-server.png" },
+  { name: "Framer Motion", image: "./images/framer-motion.svg" },
 ];
 
 const Skills = () => {
@@ -57,9 +47,9 @@ const Skills = () => {
               Highly motivated, result-oriented, and self-driven, I am committed
               to enhancing my skills and staying updated with the latest
               frontend development tools and technologies. I possess a strong
-              understanding of JavaScript, HTML, CSS, React.js, Redux Toolkit,
-              REST API, Java, OOPS, DBMS, SQL, Git, GitHub, Material UI, Framer
-              Motion, and Bootstrap.
+              understanding of JavaScript(ES6+), HTML, CSS, React.js, Redux
+              Toolkit, REST API, Java, OOPS, DBMS, SQL, Git, GitHub, Material
+              UI, Framer Motion, Shadcn Ui and Bootstrap.
             </p>
           </motion.div>
 
@@ -71,11 +61,8 @@ const Skills = () => {
             className="grid grid-cols-3 sm:grid-cols-4 gap-8"
           >
             {skills.map((skill, index) => (
-              <motion.a
+              <motion.div
                 key={skill.name}
-                href={skill.link}
-                target="_blank"
-                rel="noreferrer"
                 className="flex flex-col items-center group"
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -90,7 +77,7 @@ const Skills = () => {
                 <span className="mt-2 text-sm text-gray-300 group-hover:text-white">
                   {skill.name}
                 </span>
-              </motion.a>
+              </motion.div>
             ))}
           </motion.div>
         </div>

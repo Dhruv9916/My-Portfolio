@@ -70,19 +70,6 @@ const About = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <a
-                href="https://drive.google.com/file/d/1RzrLVE_a67Dg_gGmCk7H5U5qATahnTHZ/view"
-                target="_blank"
-                rel="noreferrer"
-                className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <img
-                  src="./images/resume.png" // Correct path
-                  alt="Resume"
-                  className="w-16 h-16 mb-2"
-                />
-                <span className="font-medium">My Resume</span>
-              </a>
-              <a
                 href="https://leetcode.com/u/dhruv_1803/"
                 target="_blank"
                 rel="noreferrer"
